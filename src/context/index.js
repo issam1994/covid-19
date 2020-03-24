@@ -21,8 +21,10 @@ export const ContextProvider = ({ children }) => {
             setFetchingStatus("fetching")
             const res = await fetch(constructUrl())
             const data = await res.json()
-            setCountryData(data)
-            setFetchingStatus("done")
+            setTimeout(() => {
+                setCountryData(data)
+                setFetchingStatus("done")
+            }, 1500)
         } catch (e) {
             setFetchingStatus("failed")
             setTimeout(fetchData, 3000);
