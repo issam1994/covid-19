@@ -17,13 +17,14 @@
   },
   "scripts": {
     "react": "react-scripts start",
-    "postcss": "postcss src/styles/input --dir src/styles/output -w",
-    "start": "concurrently \"yarn react\" \"yarn postcss\"",
+    "start": "yarn react",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:styles": "postcss src/styles/input --dir src/styles/output",
-    "prebuild": "yarn build:styles --env production"
+    "watch:css": "postcss src/styles/input --dir src/styles/output -w",
+    "prebuild": "yarn build:styles --env production",
+    "prestart": "yarn build:styles"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,7 +45,6 @@
     "@fullhuman/postcss-purgecss": "^2.1.0",
     "@tailwindcss/custom-forms": "^0.2.1",
     "autoprefixer": "^9.7.4",
-    "concurrently": "^5.1.0",
     "postcss-cli": "^7.1.0",
     "postcss-import": "^12.0.1",
     "postcss-nesting": "^7.0.1",
