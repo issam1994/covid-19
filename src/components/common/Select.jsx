@@ -39,7 +39,7 @@ export default function Select({ items = defaultItems, displayValue = (item) => 
             </div>
             {/* items of values */}
                 <CSSTransition in={show} timeout={200} classNames="scale" unmountOnExit>
-                    <div className="absolute z-30 inset-x-0 w-full bg-white border rounded p-1 overflow-y-scroll h-64" >
+                    <div className="absolute z-30 inset-x-0 w-full bg-white border rounded p-1 overflow-y-scroll" style={{maxHeight: "16rem"}} >
                         {getItems().map((item, i) => <div key={i} className="cursor-pointer px-1 hover:bg-gray-200 rounded" onClick={() => { setSelected(displayValue(item)); handleSelect(item); setShow(false); setSearch("") }} style={selectedStyle(item)}>{displayValue(item)}</div>)}
                     </div>
                 </CSSTransition>
