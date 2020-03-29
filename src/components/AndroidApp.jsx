@@ -10,7 +10,7 @@ export default function AndroidApp() {
     }, [])
     return (
         <CSSTransition in={show} classNames="scale" timeout={300} unmountOnExit>
-            <div className="fixed mx-auto bottom-0 max-w-6xl">
+            <div className="fixed mx-auto bottom-0 w-full max-w-6xl">
                 <div className="m-4 px-2 py-3 bg-gray-700 text-white flex flex-col justify-center items-center rounded-lg md:justify-start md:flex-row text-sm md:text-base">
                     {/* hide button */}
                     <div className="flex absolute top-0 right-0 mr-2">
