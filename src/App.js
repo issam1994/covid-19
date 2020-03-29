@@ -1,7 +1,9 @@
 import React from 'react'
+import Container from './components/common/Container'
 import Stats from './components/Stats'
 import Selection from './components/Selection'
 import Visualization from './components/Visualization'
+import AndroidApp from './components/AndroidApp'
 //context
 import { ContextProvider } from './context'
 
@@ -12,12 +14,10 @@ function App() {
         <Stats />
         <Selection />
         <Visualization />
+        <AndroidApp />
       </Container>
     </ContextProvider>
   );
 }
 
-function Container({ children }) {
-  return (<div className="max-w-6xl mx-auto text-gray-800"> {children} </div>)
-}
 export default App;
