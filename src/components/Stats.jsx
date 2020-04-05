@@ -45,8 +45,9 @@ function normalizeNumbers(value) {
     let count = 0
     let digitsArrayWithComas = []
     for (let i = 0; i < digitsArray.length; i++) {
-        if (count === 3) {
-            digitsArrayWithComas.push(",", digitsArray[i])
+        if (count === 2 && i !== digitsArray.length - 1) {
+            digitsArrayWithComas.push(digitsArray[i])
+            digitsArrayWithComas.push(",")
             count = 0
         } else {
             digitsArrayWithComas.push(digitsArray[i])
