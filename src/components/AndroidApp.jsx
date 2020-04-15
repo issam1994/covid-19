@@ -23,7 +23,7 @@ export default function AndroidApp() {
                         Get the android app & check out the statistics in a more convenient way
                     </p>
                     {/* action button  */}
-                    <a href='https://drive.google.com/file/d/1Lu1z4ZIsd-CPbYYWQ3llwkZ6O1TUYpQV/view' rel="noopener noreferrer" target='_blank' className="uppercase m-2 px-4 py-2 bg-green-400 rounded-lg md:ml-auto">
+                    <a href='https://drive.google.com/uc?id=1Lu1z4ZIsd-CPbYYWQ3llwkZ6O1TUYpQV&export=download' rel="noopener noreferrer" target='_blank' className="uppercase m-2 px-4 py-2 bg-green-400 rounded-lg md:ml-auto">
                         Download
                 </a>
                 </div>
